@@ -832,7 +832,7 @@ function register(){
             echo $green;
             $xresult = 'Account Status : '.$register->account_status.'\n Account Name : '.$register->profile->first_name.' '.$register->profile->last_name.'\nPassword: abcd1234';
         }
-        echo "\n".$xresult."\n";
+        echo "\n".$result."\n";
     }else{
         if ($sendOTP->error->code == "-12"){
             $result = "Number is already registered.";
